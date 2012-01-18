@@ -16,7 +16,7 @@ RESET=$reset_color
 if [ "$(whoami)" = "root" ]; then
     PROMPTCOLOR="%{$RB%}" PREFIX="-!-";
 else
-    PROMPTCOLOR="" PREFIX="---";
+    PROMPTCOLOR="" PREFIX="-$USERNAME-";
 fi
 
 local return_code="%(?..%{$R%}%? ↵%{$RESET%})"
